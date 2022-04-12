@@ -74,8 +74,11 @@ void	ft_lstclear(t_list **lst, void (*del)(void*));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
+void	*ft_gb_calloc(size_t count, size_t size, t_list **gb_lst);
+char	*ft_strcpy(char *dest, const char *src);
 double	ft_abs(double nb);
 size_t	ft_intlen(long nb);
+long	ft_atol(const char *str);
 void	ft_free(void **ptr);
 void	ft_clear_console(void);
 int		ft_isspace(int c);
