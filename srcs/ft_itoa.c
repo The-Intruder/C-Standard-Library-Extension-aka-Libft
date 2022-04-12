@@ -9,7 +9,10 @@
 /*   Updated: 2021/11/11 11:45:40 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../libft.h"
+
+/* -------------------------------------------------------------------------- */
 
 static char	*assign_chars(char *str, size_t buff_len, int n)
 {
@@ -32,6 +35,8 @@ static char	*assign_chars(char *str, size_t buff_len, int n)
 	return (str);
 }
 
+/* -------------------------------------------------------------------------- */
+
 char	*ft_itoa(int n)
 {
 	size_t	buff_len;
@@ -47,3 +52,5 @@ char	*ft_itoa(int n)
 		return (NULL);
 	return (assign_chars(str, buff_len, n));
 }
+
+/* -------------------------------------------------------------------------- */

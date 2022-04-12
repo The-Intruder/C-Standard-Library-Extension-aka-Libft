@@ -9,7 +9,10 @@
 /*   Updated: 2021/11/03 15:28:50 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../libft.h"
+
+/* -------------------------------------------------------------------------- */
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
@@ -21,7 +24,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	tc_dst = (char *) dst;
 	tc_src = (char *) src;
 	if (!tc_dst && !tc_src)
-		return (0);
+		return (NULL);
 	while (i < n)
 	{
 		tc_dst[i] = tc_src[i];
@@ -29,3 +32,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/* -------------------------------------------------------------------------- */

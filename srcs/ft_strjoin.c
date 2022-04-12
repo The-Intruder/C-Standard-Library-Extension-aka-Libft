@@ -9,7 +9,10 @@
 /*   Updated: 2021/11/05 16:21:02 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../libft.h"
+
+/* -------------------------------------------------------------------------- */
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
@@ -18,11 +21,11 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	output_i;
 
 	if (!s1 || !s2)
-		return (0);
+		return (NULL);
 	i = ft_strlen(s1) + ft_strlen(s2);
 	output_str = (char *) ft_calloc(sizeof(char), i + 1);
 	if (!output_str)
-		return (0);
+		return (NULL);
 	else if (!i)
 		return (output_str);
 	i = 0;
@@ -35,3 +38,5 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	output_str[output_i] = '\0';
 	return (output_str);
 }
+
+/* -------------------------------------------------------------------------- */

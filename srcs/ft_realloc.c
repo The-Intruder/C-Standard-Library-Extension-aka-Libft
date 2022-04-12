@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnaimi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 14:22:05 by mnaimi            #+#    #+#             */
-/*   Updated: 2021/11/11 14:41:03 by mnaimi           ###   ########.fr       */
+/*   Created: 2021/11/04 16:10:46 by mnaimi            #+#    #+#             */
+/*   Updated: 2021/11/09 09:39:16 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /* -------------------------------------------------------------------------- */
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	*ft_realloc(void *old_ptr, size_t old_size, size_t new_size)
 {
-	size_t	i;
+	void	*new_ptr;
 
-	if (!s || !f)
-		return ;
-	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		++i;
-	}
+	new_ptr = ft_calloc(1, new_size);
+	if (new_ptr == NULL)
+		return (old_ptr);
+	new_ptr = ft_memmove(new_ptr, old_ptr, old_size);
+	return (free(old_ptr), new_ptr);
 }
 
 /* -------------------------------------------------------------------------- */

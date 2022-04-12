@@ -11,6 +11,8 @@
 /* ************************************************************************** */
 #include "../libft.h"
 
+/* -------------------------------------------------------------------------- */
+
 static size_t	check_len(const char *s, unsigned int start, size_t len)
 {
 	unsigned int	i;
@@ -22,6 +24,8 @@ static size_t	check_len(const char *s, unsigned int start, size_t len)
 		++s_out_len;
 	return (s_out_len);
 }
+
+/* -------------------------------------------------------------------------- */
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
@@ -49,3 +53,5 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		s_out[i++] = s[start++];
 	return (s_out);
 }
+
+/* -------------------------------------------------------------------------- */

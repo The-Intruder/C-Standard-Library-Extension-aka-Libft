@@ -1,31 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_striteri.c                                      :+:      :+:    :+:   */
+/*   ft_calloc_gb.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnaimi <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/11 14:22:05 by mnaimi            #+#    #+#             */
-/*   Updated: 2021/11/11 14:41:03 by mnaimi           ###   ########.fr       */
+/*   Created: 2021/11/04 16:10:46 by mnaimi            #+#    #+#             */
+/*   Updated: 2021/11/09 09:39:16 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "libft.h"
 
 /* -------------------------------------------------------------------------- */
 
-void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+void	*ft_gb_calloc(size_t count, size_t size, t_list **gb_lst)
 {
-	size_t	i;
+	char	*ptr;
+	t_list	*node;
 
-	if (!s || !f)
-		return ;
-	i = 0;
-	while (s[i])
-	{
-		f(i, &s[i]);
-		++i;
-	}
+	ptr = (char *) ft_calloc(count, size);
+	if (ptr == NULL)
+		return (NULL);
+	node = ft_lstnew(ptr);
+	ft_lstadd_back(gb_lst, node);
+	node->next = NULL;
+	return ((void *) ptr);
 }
 
 /* -------------------------------------------------------------------------- */

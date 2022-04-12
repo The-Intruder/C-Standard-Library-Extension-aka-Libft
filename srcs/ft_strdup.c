@@ -9,20 +9,10 @@
 /*   Updated: 2021/11/09 10:05:00 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../libft.h"
 
-static char	*ft_strcpy(char *dest, const char *src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i])
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	return (dest);
-}
+/* -------------------------------------------------------------------------- */
 
 char	*ft_strdup(const char *src)
 {
@@ -36,3 +26,5 @@ char	*ft_strdup(const char *src)
 	ft_strcpy(dest, src);
 	return (dest);
 }
+
+/* -------------------------------------------------------------------------- */

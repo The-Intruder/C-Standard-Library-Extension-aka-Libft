@@ -9,7 +9,10 @@
 /*   Updated: 2021/11/09 10:00:51 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../libft.h"
+
+/* -------------------------------------------------------------------------- */
 
 static char	*move_chars(const char *set, char *s1_ptr)
 {
@@ -36,6 +39,8 @@ static char	*move_chars(const char *set, char *s1_ptr)
 	return (s1_ptr);
 }
 
+/* -------------------------------------------------------------------------- */
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*s1_ptr;
@@ -43,14 +48,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	char	*final_str;
 
 	if (!s1 || !set)
-		return (0);
+		return (NULL);
 	s1_ptr = ft_strdup(s1);
 	if (s1_ptr == NULL)
-		return (0);
+		return (NULL);
 	s1_ptr_cpd = s1_ptr;
 	final_str = ft_strdup((const char *)(move_chars(set, s1_ptr)));
 	if (final_str == NULL)
-		return (0);
+		return (NULL);
 	free(s1_ptr_cpd);
 	return (final_str);
 }
+
+/* -------------------------------------------------------------------------- */

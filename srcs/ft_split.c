@@ -9,7 +9,10 @@
 /*   Updated: 2021/11/09 17:43:04 by mnaimi           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "../libft.h"
+
+/* -------------------------------------------------------------------------- */
 
 static	void	cal_words_n_repl(char *s, size_t s_len, char c, size_t *words)
 {
@@ -28,6 +31,8 @@ static	void	cal_words_n_repl(char *s, size_t s_len, char c, size_t *words)
 	}
 }
 
+/* -------------------------------------------------------------------------- */
+
 static	void	free_mem(char **ptr_arr, size_t wrds)
 {
 	size_t	i;
@@ -37,6 +42,8 @@ static	void	free_mem(char **ptr_arr, size_t wrds)
 		free(ptr_arr[i++]);
 	free(ptr_arr);
 }
+
+/* -------------------------------------------------------------------------- */
 
 static	char	**alloc_str(const char *s, size_t wrds, size_t len, char **ptr)
 {
@@ -49,10 +56,7 @@ static	char	**alloc_str(const char *s, size_t wrds, size_t len, char **ptr)
 	{
 		ptr[i] = ft_strdup(&s[j]);
 		if (ptr == NULL)
-		{
-			free_mem(ptr, wrds);
-			return ((char **)ft_calloc(1, sizeof(char *)));
-		}
+			return (free_mem(ptr, wrds), (char **)ft_calloc(1, sizeof(char *)));
 		while (j < len)
 		{
 			if (s[j + 1] && !s[j])
@@ -67,6 +71,8 @@ static	char	**alloc_str(const char *s, size_t wrds, size_t len, char **ptr)
 	return (ptr);
 }
 
+/* -------------------------------------------------------------------------- */
+
 char	**ft_split(char const *s, char c)
 {
 	char	c_to_str[2];
@@ -78,11 +84,8 @@ char	**ft_split(char const *s, char c)
 	c_to_str[0] = c;
 	c_to_str[1] = '\0';
 	trim_s = ft_strtrim(s, c_to_str);
-	if (trim_s == NULL || !s || !*s || !trim_s[0])
-	{
-		free(trim_s);
-		return ((char **)ft_calloc(1, sizeof(char *)));
-	}
+	if (s == NULL || !(*s) || trim_s == NULL || !(*trim_s))
+		return (free(trim_s), (char **)ft_calloc(1, sizeof(char *)));
 	trim_s_len = ft_strlen(trim_s);
 	words = 1;
 	cal_words_n_repl(trim_s, trim_s_len, c, &words);
@@ -93,3 +96,5 @@ char	**ft_split(char const *s, char c)
 	free(trim_s);
 	return (ptr_arr);
 }
+
+/* -------------------------------------------------------------------------- */
