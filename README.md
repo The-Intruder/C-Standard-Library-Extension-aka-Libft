@@ -1,10 +1,10 @@
 ```text
-                             __       __  .______    _______ .___________.   __    __
-                            |  |     |  | |   _  \  |   ____||           |  |  |  |  |
-                            |  |     |  | |  |_)  | |  |__   `---|  |----`  |  |__|  |
-                            |  |     |  | |   _  <  |   __|      |  |       |   __   |
-                            |  `----.|  | |  |_)  | |  |         |  |     __|  |  |  |
-                            |_______||__| |______/  |__|         |__|    (__)__|  |__|
+                     __       __  .______    _______ .___________.   __    __
+                    |  |     |  | |   _  \  |   ____||           |  |  |  |  |
+                    |  |     |  | |  |_)  | |  |__   `---|  |----`  |  |__|  |
+                    |  |     |  | |   _  <  |   __|      |  |       |   __   |
+                    |  `----.|  | |  |_)  | |  |         |  |     __|  |  |  |
+                    |_______||__| |______/  |__|         |__|    (__)__|  |__|
 
 ```
 
@@ -14,6 +14,7 @@
 </a>
 <img  src="https://img.shields.io/github/repo-size/The-Intruder/C-Standard-Library-Extension-aka-Libft"  alt="Repo Size">
 <img  src="https://img.shields.io/github/last-commit/The-Intruder/C-Standard-Library-Extension-aka-Libft"  alt="Last Commit">
+<img alt="GitHub" src="https://img.shields.io/github/license/The-Intruder/C-Standard-Library-Extension-aka-Libft">
 </div>
 
 ## Description
@@ -747,9 +748,13 @@ You can find examples and tutorials on using libft on various platforms, includi
 
 ## Related
 
-Here are some related projects
+Here are some usefule links:
 
-[Awesome README](https://github.com/matiassingers/awesome-readme)
+- [Libft unit test](https://github.com/alelievr/libft-unit-test)
+- [Libft war machine](https://github.com/0x050f/libft-war-machine)
+- [Francinette](https://github.com/xicodomingues/francinette)
+- [Libftdestructor](https://github.com/t0mm4rx/libftdestructor)
+- [42 libft](https://github.com/Glagan/42-libft)
 
 ## License
 
