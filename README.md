@@ -1,12 +1,20 @@
-```text
-                     __       __  .______    _______ .___________.   __    __
-                    |  |     |  | |   _  \  |   ____||           |  |  |  |  |
-                    |  |     |  | |  |_)  | |  |__   `---|  |----`  |  |__|  |
-                    |  |     |  | |   _  <  |   __|      |  |       |   __   |
-                    |  `----.|  | |  |_)  | |  |         |  |     __|  |  |  |
-                    |_______||__| |______/  |__|         |__|    (__)__|  |__|
+<br/>
+<p align="center">
+  <a href="https://github.com/The-Intruder/C-Standard-Library-Extension-aka-Libft">
+    <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="Logo" width="80" height="80">
+  </a>
 
-```
+  <h3 align="center">C Standard Library Extension <em>(Libft)</em></h3>
+
+  <p align="center">
+    A modest C library that provides a set of commonly used functions for string manipulation, memory allocation, and linked list operations. It serves as a helpful utility library for C programming.
+    <br/>
+    <br/>
+    <a href="https://github.com/The-Intruder/C-Standard-Library-Extension-aka-Libft/issues">Report Bug</a>
+    .
+    <a href="https://github.com/The-Intruder/C-Standard-Library-Extension-aka-Libft/issues">Request Feature</a>
+  </p>
+</p>
 
 <div  style="display: flex; justify-content: center;">
 <a  href="https://twitter.com/i_am_amine" target="_blank">
@@ -14,10 +22,34 @@
 </a>
 <img  src="https://img.shields.io/github/repo-size/The-Intruder/C-Standard-Library-Extension-aka-Libft"  alt="Repo Size">
 <img  src="https://img.shields.io/github/last-commit/The-Intruder/C-Standard-Library-Extension-aka-Libft"  alt="Last Commit">
-<img alt="GitHub" src="https://img.shields.io/github/license/The-Intruder/C-Standard-Library-Extension-aka-Libft">
+<img  src="https://img.shields.io/github/license/The-Intruder/C-Standard-Library-Extension-aka-Libft" alt="License" >
+<img  src="https://img.shields.io/badge/Made%20with-❤-1f425f.svg"  alt="made-with-love">
 </div>
 
-## Description
+## Table Of Contents
+
+- [Table Of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+- [Run Locally](#run-locally)
+- [Functions Reference](#functions-reference)
+- [Frequently Asked Questions (FAQ)](#frequently-asked-questions-faq)
+    - [What is libft?](#what-is-libft)
+    - [How do I use libft in my project?](#how-do-i-use-libft-in-my-project)
+    - [How do I compile libft?](#how-do-i-compile-libft)
+    - [Can I modify libft functions?](#can-i-modify-libft-functions)
+    - [Where can I find documentation for libft functions?](#where-can-i-find-documentation-for-libft-functions)
+    - [How do I contribute to libft?](#how-do-i-contribute-to-libft)
+    - [Is libft compatible with different operating systems?](#is-libft-compatible-with-different-operating-systems)
+    - [Can I use libft in commercial projects?](#can-i-use-libft-in-commercial-projects)
+    - [Where can I find examples or tutorials on using libft?](#where-can-i-find-examples-or-tutorials-on-using-libft)
+- [Contributing](#contributing)
+  - [Creating A Pull Request](#creating-a-pull-request)
+- [Ressources](#ressources)
+- [License](#license)
+- [Authors](#authors)
+- [Acknowledgements](#acknowledgements)
+
+## About The Project
 
 The libft library contains many functions that are commonly used in C programming, such as string manipulation functions, memory allocation functions, and linked list manipulation functions, among others. The library provides a convenient way for C programmers to perform these operations without having to write the code from scratch every time.
 
@@ -57,9 +89,9 @@ _**NOTE:** The `*.c` and the `*.o` represents your own files_
 
 ## Functions Reference
 
-### ft_strlen
+---
 
-Calculates the length of a string.
+***ft_strlen:*** Calculates the length of a string.
 
 ```c
 size_t ft_strlen(const char *s);
@@ -69,9 +101,9 @@ size_t ft_strlen(const char *s);
 | :-------- | :------------ | :---------------- |
 | `s`       | `const char*` | The input string. |
 
-### ft_memcpy
+---
 
-Copies a block of memory from one location to another.
+***ft_memcpy:*** Copies a block of memory from one location to another.
 
 ```c
 void *ft_memcpy(void *dst, const void *src, size_t n);
@@ -83,9 +115,9 @@ void *ft_memcpy(void *dst, const void *src, size_t n);
 | `src`     | `const void*` | Pointer to the source memory.      |
 | `n`       | `size_t`      | Number of bytes to copy.           |
 
-### ft_memmove
+---
 
-Copies a block of memory from one location to another, but handles
+***ft_memmove:*** Copies a block of memory from one location to another, but handles
 
 ```c
 void *ft_memmove(void *dst, const void *src, size_t len);
@@ -97,9 +129,9 @@ void *ft_memmove(void *dst, const void *src, size_t len);
 | `src`     | `const void*` | Pointer to the source memory.      |
 | `len`     | `size_t`      | Number of bytes to move.           |
 
-### ft_memchr
+---
 
-Searches for a specific byte value in a block of memory.
+***ft_memchr:*** Searches for a specific byte value in a block of memory.
 
 ```c
 void *ft_memchr(const void *s, int c, size_t n);
@@ -111,9 +143,9 @@ void *ft_memchr(const void *s, int c, size_t n);
 | `c`       | `int`         | Value to be found.                  |
 | `n`       | `size_t`      | Number of bytes to search.          |
 
-### ft_memset
+---
 
-Fills a block of memory with a specified byte value.
+***ft_memset:*** Fills a block of memory with a specified byte value.
 
 ```c
 void *ft_memset(void *b, int c, size_t len);
@@ -125,9 +157,9 @@ void *ft_memset(void *b, int c, size_t len);
 | `c`       | `int`    | Value to set.                 |
 | `len`     | `size_t` | Number of bytes to set.       |
 
-### ft_calloc
+---
 
-Allocates memory for an array and initializes it to zero.
+***ft_calloc:*** Allocates memory for an array and initializes it to zero.
 
 ```c
 void *ft_calloc(size_t count, size_t size);
@@ -138,9 +170,9 @@ void *ft_calloc(size_t count, size_t size);
 | `count`   | `size_t` | Number of elements to allocate. |
 | `size`    | `size_t` | Size of each element.           |
 
-### ft_bzero
+---
 
-Sets a block of memory to zero.
+***ft_bzero:*** Sets a block of memory to zero.
 
 ```c
 void ft_bzero(void *s, size_t n);
@@ -151,9 +183,9 @@ void ft_bzero(void *s, size_t n);
 | `s`       | `void*`  | Pointer to the memory to zero out. |
 | `n`       | `size_t` | Number of bytes to zero out.       |
 
-### ft_strnstr
+---
 
-Finds the first occurrence of a substring within a string, up to a specified length.
+***ft_strnstr:*** Finds the first occurrence of a substring within a string, up to a specified length.
 
 ```c
 char *ft_strnstr(const char *haystack, const char *needle, size_t len);
@@ -165,9 +197,9 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 | `needle`   | `const char*` | The string to search for.               |
 | `len`      | `size_t`      | Maximum number of characters to search. |
 
-### ft_strcpy
+---
 
-Copies a string from one location to another.
+***ft_strcpy:*** Copies a string from one location to another.
 
 ```c
 char *ft_strcpy(char *dest, const char *src);
@@ -178,9 +210,9 @@ char *ft_strcpy(char *dest, const char *src);
 | `dest`    | `char*`       | Pointer to the destination string. |
 | `src`     | `const char*` | Pointer to the source string.      |
 
-### ft_strrchr
+---
 
-Finds the last occurrence of a character in a string.
+***ft_strrchr:*** Finds the last occurrence of a character in a string.
 
 ```c
 char *ft_strrchr(const char *s, int c);
@@ -191,9 +223,9 @@ char *ft_strrchr(const char *s, int c);
 | `s`       | `const char*` | The string to search in.     |
 | `c`       | `int`         | The character to search for. |
 
-### ft_strchr
+---
 
-Finds the first occurrence of a character in a string.
+***ft_strchr:*** Finds the first occurrence of a character in a string.
 
 ```c
 char *ft_strchr(const char *s, int c);
@@ -204,9 +236,9 @@ char *ft_strchr(const char *s, int c);
 | `s`       | `const char*` | The string to search in.     |
 | `c`       | `int`         | The character to search for. |
 
-### ft_strdup
+---
 
-Duplicates a string.
+***ft_strdup:*** Duplicates a string.
 
 ```c
 char *ft_strdup(const char *src);
@@ -216,9 +248,9 @@ char *ft_strdup(const char *src);
 | :-------- | :------------ | :------------------------------ |
 | `src`     | `const char*` | The source string to duplicate. |
 
-### ft_isalpha
+---
 
-Checks if a character is alphabetic.
+***ft_isalpha:*** Checks if a character is alphabetic.
 
 ```c
 int  ft_isalpha(int c);
@@ -228,9 +260,9 @@ int  ft_isalpha(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_isdigit
+---
 
-Checks if a character is a digit.
+***ft_isdigit:*** Checks if a character is a digit.
 
 ```c
 int  ft_isdigit(int c);
@@ -240,9 +272,9 @@ int  ft_isdigit(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_isalnum
+---
 
-Checks if a character is alphanumeric.
+***ft_isalnum:*** Checks if a character is alphanumeric.
 
 ```c
 int  ft_isalnum(int c);
@@ -252,9 +284,9 @@ int  ft_isalnum(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_isascii
+---
 
-Checks if a character is an ASCII character.
+***ft_isascii:*** Checks if a character is an ASCII character.
 
 ```c
 int  ft_isascii(int c);
@@ -264,9 +296,9 @@ int  ft_isascii(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_isprint
+---
 
-Checks if a character is a printable character.
+***ft_isprint:*** Checks if a character is a printable character.
 
 ```c
 int  ft_isprint(int c);
@@ -276,9 +308,9 @@ int  ft_isprint(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_toupper
+---
 
-Converts a character to uppercase.
+***ft_toupper:*** Converts a character to uppercase.
 
 ```c
 int  ft_toupper(int c);
@@ -288,9 +320,9 @@ int  ft_toupper(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_tolower
+---
 
-Converts a character to lowercase.
+***ft_tolower:*** Converts a character to lowercase.
 
 ```c
 int  ft_tolower(int c);
@@ -300,9 +332,9 @@ int  ft_tolower(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_atoi
+---
 
-Converts a string to an integer.
+***ft_atoi:*** Converts a string to an integer.
 
 ```c
 int  ft_atoi(const char *str);
@@ -312,9 +344,9 @@ int  ft_atoi(const char *str);
 | :-------- | :------------ | :----------------------------------- |
 | `str`     | `const char*` | The string to convert to an integer. |
 
-### ft_memcmp
+---
 
-Compares two blocks of memory.
+***ft_memcmp:*** Compares two blocks of memory.
 
 ```c
 int  ft_memcmp(const void *s1, const void *s2, size_t n);
@@ -326,9 +358,9 @@ int  ft_memcmp(const void *s1, const void *s2, size_t n);
 | `s2`      | `const char*` | The second string to compare.            |
 | `n`       | `size_t`      | Maximum number of characters to compare. |
 
-### ft_strncmp
+---
 
-Compares two strings up to a specified length.
+***ft_strncmp:*** Compares two strings up to a specified length.
 
 ```c
 int  ft_strncmp(const char *s1, const char *s2, size_t n);
@@ -340,9 +372,9 @@ int  ft_strncmp(const char *s1, const char *s2, size_t n);
 | `s2`      | `const char*` | The second string to compare.            |
 | `n`       | `size_t`      | Maximum number of characters to compare. |
 
-### ft_striteri
+---
 
-Applies a function to each character in a string, with its index as an argument.
+***ft_striteri:*** Applies a function to each character in a string, with its index as an argument.
 
 ```c
 void ft_striteri(char *s, void (*f)(unsigned int, char*));
@@ -353,9 +385,9 @@ void ft_striteri(char *s, void (*f)(unsigned int, char*));
 | `s`       | `char*`                         | The string to iterate over.                                                                                                                  |
 | `f`       | `void (*)(unsigned int, char*)` | Pointer to a function that takes an unsigned integer and a character as arguments. This function is called for each character in the string. |
 
-### ft_putchar_fd
+---
 
-Writes a character to a file descriptor.
+***ft_putchar_fd:*** Writes a character to a file descriptor.
 
 ```c
 void ft_putchar_fd(char c, int fd);
@@ -366,9 +398,9 @@ void ft_putchar_fd(char c, int fd);
 | `c`       | `char` | The character to write. |
 | `fd`      | `int`  | The file descriptor.    |
 
-### ft_putstr_fd
+---
 
-Writes a string to a file descriptor.
+***ft_putstr_fd:*** Writes a string to a file descriptor.
 
 ```c
 void ft_putstr_fd(char *s, int fd);
@@ -379,9 +411,9 @@ void ft_putstr_fd(char *s, int fd);
 | `s`       | `char*` | The string to write. |
 | `fd`      | `int`   | The file descriptor. |
 
-### ft_putendl_fd
+---
 
-Writes a string followed by a newline character to a file descriptor.
+***ft_putendl_fd:*** Writes a string followed by a newline character to a file descriptor.
 
 ```c
 void ft_putendl_fd(char *s, int fd);
@@ -392,9 +424,9 @@ void ft_putendl_fd(char *s, int fd);
 | `s`       | `char*` | The string to write. |
 | `fd`      | `int`   | The file descriptor. |
 
-### ft_putnbr_fd
+---
 
-Writes an integer to a file descriptor.
+***ft_putnbr_fd:*** Writes an integer to a file descriptor.
 
 ```c
 void ft_putnbr_fd(int n, int fd);
@@ -405,9 +437,9 @@ void ft_putnbr_fd(int n, int fd);
 | `n`       | `int` | The integer to write. |
 | `fd`      | `int` | The file descriptor.  |
 
-### ft_substr
+---
 
-Extracts a substring from a string.
+***ft_substr:*** Extracts a substring from a string.
 
 ```c
 char *ft_substr(char const *s, unsigned int start, size_t len);
@@ -419,9 +451,9 @@ char *ft_substr(char const *s, unsigned int start, size_t len);
 | `start`   | `unsigned int` | The starting index.          |
 | `len`     | `size_t`       | The length of the substring. |
 
-### ft_strjoin
+---
 
-Concatenates two strings.
+***ft_strjoin:*** Concatenates two strings.
 
 ```c
 char *ft_strjoin(char const *s1, char const *s2);
@@ -432,9 +464,9 @@ char *ft_strjoin(char const *s1, char const *s2);
 | `s1`      | `char*` | The first string.  |
 | `s2`      | `char*` | The second string. |
 
-### ft_strtrim
+---
 
-Removes leading and trailing whitespace from a string.
+***ft_strtrim:*** Removes leading and trailing whitespace from a string.
 
 ```c
 char *ft_strtrim(char const *s1, char const *set);
@@ -445,9 +477,9 @@ char *ft_strtrim(char const *s1, char const *set);
 | `s1`      | `char*` | The string to trim.            |
 | `set`     | `char*` | The set of characters to trim. |
 
-### ft_split
+---
 
-Splits a string into an array of substrings based on a specified delimiter.
+***ft_split:*** Splits a string into an array of substrings based on a specified delimiter.
 
 ```c
 char **ft_split(char const *s, char c);
@@ -458,9 +490,9 @@ char **ft_split(char const *s, char c);
 | `s`       | `char*` | The string to split.     |
 | `c`       | `char`  | The delimiter character. |
 
-### ft_itoa
+---
 
-Converts an integer to a string.
+***ft_itoa:*** Converts an integer to a string.
 
 ```c
 char *ft_itoa(int n);
@@ -470,9 +502,9 @@ char *ft_itoa(int n);
 | :-------- | :---- | :---------------------------------- |
 | `n`       | `int` | The integer to convert to a string. |
 
-### ft_strmapi
+---
 
-Applies a function to each character in a string, with its index as an argument, and returns a new string.
+***ft_strmapi:*** Applies a function to each character in a string, with its index as an argument, and returns a new string.
 
 ```c
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -483,9 +515,9 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 | `s`       | `char*`                        | The string to iterate over.                                                                                                                                              |
 | `f`       | `char (*)(unsigned int, char)` | Pointer to a function that takes an unsigned integer and a character as arguments and returns a new character. This function is called for each character in the string. |
 
-### ft_lstnew
+---
 
-Creates a new node for a linked list.
+***ft_lstnew:*** Creates a new node for a linked list.
 
 ```c
 t_list *ft_lstnew(void *content);
@@ -495,9 +527,9 @@ t_list *ft_lstnew(void *content);
 | :-------- | :------ | :--------------------------- |
 | `content` | `void*` | The content of the new node. |
 
-### ft_lstmap
+---
 
-Applies a function to each element in a linked list and returns a new list.
+***ft_lstmap:*** Applies a function to each element in a linked list and returns a new list.
 
 ```c
 t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
@@ -509,9 +541,9 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 | `f`       | `void* (*)(void*)` | Pointer to a function that takes a void pointer as an argument and returns a new void pointer. This function is applied to each element of the list. |
 | `del`     | `void (*)(void*)`  | Pointer to a function used to delete the content of a node.                                                                                          |
 
-### ft_lstlast
+---
 
-Returns the last node in a linked list.
+***ft_lstlast:*** Returns the last node in a linked list.
 
 ```c
 t_list *ft_lstlast(t_list *lst);
@@ -521,9 +553,9 @@ t_list *ft_lstlast(t_list *lst);
 | :-------- | :-------- | :------------------------------------ |
 | `lst`     | `t_list*` | The list to find the last element of. |
 
-### ft_lstadd_front
+---
 
-Adds a new node to the beginning of a linked list.
+***ft_lstadd_front:*** Adds a new node to the beginning of a linked list.
 
 ```c
 void ft_lstadd_front(t_list **lst, ft_list *new);
@@ -534,9 +566,9 @@ void ft_lstadd_front(t_list **lst, ft_list *new);
 | `lst`     | `t_list**` | A pointer to the pointer of the head of the list. |
 | `new`     | `t_list*`  | The new node to add to the front of the list.     |
 
-### ft_lstadd_back
+---
 
-Adds a new node to the end of a linked list.
+***ft_lstadd_back:*** Adds a new node to the end of a linked list.
 
 ```c
 void ft_lstadd_back(t_list **lst, ft_list *new);
@@ -547,9 +579,9 @@ void ft_lstadd_back(t_list **lst, ft_list *new);
 | `lst`     | `t_list**` | A pointer to the pointer of the head of the list. |
 | `new`     | `t_list*`  | The new node to add to the back of the list.      |
 
-### ft_lstdelone
+---
 
-Deletes a node from a linked list.
+***ft_lstdelone:*** Deletes a node from a linked list.
 
 ```c
 void ft_lstdelone(t_list *lst, void (*del)(void*));
@@ -560,9 +592,9 @@ void ft_lstdelone(t_list *lst, void (*del)(void*));
 | `lst`     | `t_list*`         | The node to delete.                                         |
 | `del`     | `void (*)(void*)` | Pointer to a function used to delete the content of a node. |
 
-### ft_lstclear
+---
 
-Deletes all nodes from a linked list.
+***ft_lstclear:*** Deletes all nodes from a linked list.
 
 ```c
 void ft_lstclear(t_list **lst, void (*del)(void*));
@@ -573,17 +605,17 @@ void ft_lstclear(t_list **lst, void (*del)(void*));
 | `lst`     | `t_list**`        | A pointer to the pointer of the head of the list.           |
 | `del`     | `void (*)(void*)` | Pointer to a function used to delete the content of a node. |
 
-### ft_lstiter
+---
 
-Applies a function to each element in a linked list.
+***ft_lstiter:*** Applies a function to each element in a linked list.
 
 ```c
 void ft_lstiter(t_list *lst, void (*f)(void *));
 ```
 
-### ft_lstsize
+---
 
-Counts the number of nodes in a linked list.
+***ft_lstsize:*** Counts the number of nodes in a linked list.
 
 ```c
 int  ft_lstsize(t_list *lst);
@@ -593,9 +625,9 @@ int  ft_lstsize(t_list *lst);
 | :-------- | :-------- | :--------------------------- |
 | `lst`     | `t_list*` | The list to get the size of. |
 
-### ft_gb_calloc
+---
 
-Similar to calloc, but returns NULL if the allocation fails.
+***ft_gb_calloc:*** Similar to calloc, but returns NULL if the allocation fails.
 
 ```c
 void *ft_gb_calloc(size_t count, size_t size, ft_list **gb_lst);
@@ -607,9 +639,9 @@ void *ft_gb_calloc(size_t count, size_t size, ft_list **gb_lst);
 | `size`    | `size_t`   | The size of each element.                    |
 | `gb_lst`  | `t_list**` | A pointer to the pointer of the global list. |
 
-### ft_abs
+---
 
-Returns the absolute value of an integer.
+***ft_abs:*** Returns the absolute value of an integer.
 
 ```c
 double ft_abs(double nb);
@@ -619,9 +651,9 @@ double ft_abs(double nb);
 | :-------- | :------- | :------------------------------------------- |
 | `nb`      | `double` | The number to compute the absolute value of. |
 
-### ft_intlen
+---
 
-Returns the number of digits in an integer.
+***ft_intlen:*** Returns the number of digits in an integer.
 
 ```c
 size_t ft_intlen(long nb);
@@ -631,9 +663,9 @@ size_t ft_intlen(long nb);
 | :-------- | :----- | :------------------------------- |
 | `nb`      | `long` | The number to get the length of. |
 
-### ft_atol
+---
 
-Converts a string to a long integer.
+***ft_atol:*** Converts a string to a long integer.
 
 ```c
 long ft_atol(const char *str);
@@ -643,9 +675,9 @@ long ft_atol(const char *str);
 | :-------- | :------------ | :--------------------------------------- |
 | `str`     | `const char*` | The string to convert to a long integer. |
 
-### ft_free
+---
 
-Frees a block of memory that was previously allocated with malloc, calloc, or realloc.
+***ft_free:*** Frees a block of memory that was previously allocated with malloc, calloc, or realloc.
 
 ```c
 void ft_free(void **ptr);
@@ -655,9 +687,9 @@ void ft_free(void **ptr);
 | :-------- | :------- | :---------------------------------------------------- |
 | `ptr`     | `void**` | A pointer to the pointer to the memory block to free. |
 
-### ft_clear_console
+---
 
-Clears the console screen.
+***ft_clear_console:*** Clears the console screen.
 
 ```c
 void ft_clear_console(void);
@@ -665,9 +697,9 @@ void ft_clear_console(void);
 
 This function does not take any parameters.
 
-### ft_isspace
+---
 
-Checks if a character is a whitespace character.
+***ft_isspace:*** Checks if a character is a whitespace character.
 
 ```c
 int  ft_isspace(int c);
@@ -677,9 +709,9 @@ int  ft_isspace(int c);
 | :-------- | :---- | :---------------------- |
 | `c`       | `int` | The character to check. |
 
-### ft_strcmp
+---
 
-Compares two strings.
+***ft_strcmp:*** Compares two strings.
 
 ```c
 int  ft_strcmp(const char *s1, const char *s2);
@@ -690,9 +722,9 @@ int  ft_strcmp(const char *s1, const char *s2);
 | `s1`      | `const char*` | The first string.  |
 | `s2`      | `const char*` | The second string. |
 
-### ft_strlcpy
+---
 
-Copies a string from one location to another, up to a specified length, and ensures that the destination buffer is null-terminated.
+***ft_strlcpy:*** Copies a string from one location to another, up to a specified length, and ensures that the destination buffer is null-terminated.
 
 ```c
 size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -746,9 +778,25 @@ Yes, you can use libft in commercial projects. It is released under a permissive
 
 You can find examples and tutorials on using libft on various platforms, including online programming communities, blogs, and forums. Additionally, you can explore the official libft repository for usage examples and documentation.
 
-## Related
+## Contributing
 
-Here are some usefule links:
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+- If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/The-Intruder/Lightweight-Unix-Shell-Implementation-aka-Minishell/issues/new) to discuss it, or directly create a pull request after you edit the _README.md_ file with necessary changes.
+- Please make sure you check your spelling and grammar.
+- Create individual PR for each suggestion.
+
+### Creating A Pull Request
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## Ressources
+
+Here are some usefule links for the Libft project:
 
 - [Libft unit test](https://github.com/alelievr/libft-unit-test)
 - [Libft war machine](https://github.com/0x050f/libft-war-machine)
@@ -758,8 +806,12 @@ Here are some usefule links:
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Distributed under the **GPL-3** License. See [LICENSE](https://github.com/The-Intruder/Lightweight-Unix-Shell-Implementation-aka-Minishell/blob/main/LICENSE.md) for more information.
 
 ## Authors
 
-- [@The-Intruder](https://www.github.com/The-Intruder)
+- **Mohamed Amine Naimi** aka ***[The-Intruder](https://github.com/The-Intruder/)*** - _Computer Science Student_ - *Built the Libft project*
+
+## Acknowledgements
+
+- [The-Intruder](https://github.com/The-Intruder/)
